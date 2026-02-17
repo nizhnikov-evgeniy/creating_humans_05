@@ -1,7 +1,6 @@
 import random
 from faker import Faker
 import os
-os.makedirs('new_folder', exist_ok=True)
 
 
 def read_file(filename):
@@ -101,6 +100,7 @@ def replace_letters(skill):
 
 
 def main():
+    os.makedirs('new_folder', exist_ok=True)
     fake = Faker("ru_RU")
     for n in range(10):
         skills = random.sample([
