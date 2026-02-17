@@ -1,9 +1,8 @@
 import random
 from faker import Faker
 import os
-
-
 os.makedirs('new_folder', exist_ok=True)
+
 
 def read_file(filename):
     with open(filename, encoding='utf8') as file_:
@@ -24,8 +23,6 @@ def render_template(template_path, new_folder_path, context):
 
     write_to_file(new_folder_path, content)
 
-
-    fake = Faker("ru_RU")
 
 def replace_letters(skill):
     replacements = {
