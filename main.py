@@ -132,10 +132,9 @@ def main():
             "skill_3": skills[2],
         }
         render_template(
-            "charsheet.svg", f"new_folder/charsheet_{n+1}.svg", context
-        ) 
-
+            "charsheet.svg", f"new_folder/charsheet_{n+1}.svg", context) 
 
 
 if __name__ == '__main__':
     main()
+
